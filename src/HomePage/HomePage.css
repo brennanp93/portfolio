@@ -1,0 +1,35 @@
+.main-box {
+  background-color: white;
+  grid-column: 2/4;
+  grid-row: 2/5;
+  border: solid black 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .5fr 4fr;
+}
+
+.main-box,
+p,
+h3,
+div {
+  background-color: white;
+}
+
+.narrow-box {
+  grid-column: 1/4;
+  grid-row: 1/1;
+  background-color: white;
+  /* height: 5%; */
+  border-bottom: solid black 1px;
+}
+
+.file {
+  display: grid;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  /* height: 100%;
+  width: 100%; */
+  margin: 10% 0 10% 0;
+}

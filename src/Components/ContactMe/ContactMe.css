@@ -1,0 +1,11 @@
+.contact-box {
+  align-items: center;
+  place-content: center;
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.contact-box>div>a>img {
+  height: 80px;
+}

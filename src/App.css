@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+* {
+
+  margin: 0;
+  /* height: 100%; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 3%;
+  height: 100vh;
+  background-color: rgb(170, 170, 170);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.project-box{
+  grid-column: 2/4;
+  grid-row: 5/ 6;
   display: flex;
-  flex-direction: column;
+  /* grid-template-columns: repeat(4 1fr);
+  grid-template-rows: 1fr; */
+  border: solid black 1px;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 2%;
+  /* overflow: scroll; */
+}
+/* .project-box::-webkit-scrollbar{
+  display: none;
+} */
+
+.project {
+  /* border:solid black 2px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.intro {
+  grid-column: 2/4;
+  padding: 4%
 }
 
-.App-link {
-  color: #61dafb;
+/* .aboutMeBox {
+  background-color: white;
+  grid-column: 2/4;
+  grid-row: 3/ 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  height: 50%;
+  align-items: center;
+  place-content: center;
+  border: solid black 1px;
+} */
+
+.aboutMeText {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill-box {
+  grid-column: 2/4;
+  grid-row: 4/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+#front-end {
+  grid-column: 1/2;
+}
+
+#back-end {
+  grid-column: 2/3;
+}
+
+/* .contact-box {
+  align-items: center;
+  place-content: center;
+  display: flex;
+  grid-column: 1/4;
+  grid-row: 6/7;
+}
+
+.contact-box>div>a>img {
+  height: 80px;
+} */
